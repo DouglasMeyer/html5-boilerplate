@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>QUnit Tests</title>
-	<link rel="stylesheet" href="qunit/qunit.css" media="screen">
+	<title>Your Tests</title>
+	<style>
+		#test-it-results { list-style-type: none; margin: 0; padding: 0; }
+		#test-it-results .summary { cursor: pointer; padding: 4px; border-width: 2px; border-style: solid; }
+		#test-it-results li { margin: 2px 0 0 0; padding: 1px; display: none; }
+		#test-it-results.show-passing li { display: block; }
+		#test-it-results .summary { font-size: 150%; display: block; }
+		#test-it-results .running { background-color: #AAAAAA; border-color: #727272; display: block; }
+		#test-it-results .pass  { background-color: #E4FFE4; border-color: #98AA98; }
+		#test-it-results .fail  { background-color: #FFB0B0; border-color: #AA7676; display: block; }
+		#test-it-results .error { background-color: #FF4040; border-color: #AA2B2B; display: block; }
+	</style>
 
 <!-- reference your own javascript files here -->
 
@@ -14,18 +24,12 @@
 
 
 <!-- test runner files -->
-	<script src="qunit/qunit.js"></script>
+	<script src="test_it.js"></script>
 	<script src="tests.js"></script>
 
 
 
 </head>
-<body class="flora">
-	<h1 id="qunit-header">QUnit Test Suite</h1>
-	<h2 id="qunit-banner"></h2>
-	<div id="qunit-testrunner-toolbar"></div>
-	<h2 id="qunit-userAgent"></h2>
-	<ol id="qunit-tests"></ol>
-	<div id="qunit-fixture">test markup</div>
+	<body>
 	</body>
 </html>
